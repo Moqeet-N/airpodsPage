@@ -1,0 +1,77 @@
+/*Google fonts*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+/*----- CSS AND SCSS VARIABLES -----*/
+
+/*Variables css*/
+/*Colors*/
+:root {
+  --primary-color: #1D1D1F;
+  --secondary-color: #0071E3;
+  --white-color: #FFF;
+}
+
+/*Fonts*/
+:root {
+  --body-font: 'Roboto', sans-serif;
+  --xl-font-size: 3.5rem;
+  --l-font-size: 2.25rem;
+  --m-font-size: 1.625rem;
+  --s-font-size: 0.813rem;
+  --xs-font-size: 0.75rem;
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    --xl-font-size: 8rem;
+    --l-font-size: 4.5rem;
+    --m-font-size: 2.5rem;
+    --s-font-size: 1rem;
+    --xs-font-size: 0.938rem;
+  }
+}
+
+/*z index*/
+:root {
+  --z-back: -10;
+  --z-normal: 1;
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
+}
+
+/*----- BASE -----*/
+*, ::before, ::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: var(--body-font);
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
